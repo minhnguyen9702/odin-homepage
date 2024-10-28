@@ -1,0 +1,55 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  padding: 16px 5%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.headerImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 4em;
+}
+
+.aboutMeContainer {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 2em;
+  outline: solid black;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; /* Stack items vertically */
+    padding: 16px 10%; /* Adjust padding for smaller screens */
+  }
+
+  .overlay-text {
+    font-size: 2em;
+  }
+}
